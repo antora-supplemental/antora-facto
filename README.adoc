@@ -1,5 +1,5 @@
 = antora-facto
-:description: De-facto Antora playbook composition — Valentus UI plus search, math, and build-time diagrams. Not Valentus core.
+:description: De-facto Antora playbook composition — Valentus UI plus search, math, diagrams, and page-context metadata. Not Valentus core.
 
 *antora-facto* is the **compose pack** for a sensible Antora site stack.
 It documents and templates what DevCentr / antora-supplemental already reuse together:
@@ -8,6 +8,7 @@ It documents and templates what DevCentr / antora-supplemental already reuse tog
 * **Lunr** (`@antora/lunr-extension`) — site search
 * **STEM / KaTeX** — `stem: latexmath` (+ supplemental math JS/CSS until in-bundle)
 * **Kroki diagrams** (`asciidoctor-kroki`) — Mermaid + PlantUML → SVG at build time
+* **Page context** (`@antora-supplemental/page-context`) — audience / author / rights metadata from `page-*` attributes
 * Optional neighbors: alias-to-latest / unversioned component URLs, search-chat omnibox
 
 == Why a separate pack (not Valentus “full”)
@@ -18,20 +19,25 @@ Facto is discovered **by pack name** (like a VS Code extension pack): theme + th
 == Quick start
 
 . Copy `playbook.fragment.yml` into your playbook (or start from `examples/minimal-playbook.yml`).
-. `pnpm add antora @antora/lunr-extension asciidoctor-kroki`
+. `pnpm add antora @antora/lunr-extension asciidoctor-kroki @antora-supplemental/page-context`
++
+Until page-context is on npm: `pnpm add github:antora-supplemental/page-context#main`
 . Point `ui.bundle.url` at the Valentus `v2` release zip.
 . Add brand/math/mermaid supplemental files as needed (see Valentus docs / org `supplemental-ui` patterns).
 
 CI needs network access to `kroki-server-url` during `antora` when `kroki-fetch-diagram: true` (or self-host Kroki).
 
+The fragment sets `page-context-active` so page bodies can keep `ifndef::page-context-active[]` fallbacks that stay hidden under Facto.
+
 == Not in scope
 
-* Changing Valentus default `v2` to force Lunr/Kroki/math
+* Changing Valentus default `v2` to force Lunr/Kroki/math/page-context
 * Replacing Antora itself
 * A heavyweight monorepo of every antora-supplemental extension
 
 == Related
 
 * https://github.com/antora-supplemental/valentus-theme[valentus-theme]
+* https://github.com/antora-supplemental/page-context[page-context]
 * https://docs.devcentr.org/home/publishing/antora-diagram-formats.html[DevCentr — Antora diagram formats]
 * https://docs.devcentr.org/home/publishing/antora-essential-extensions.html[DevCentr — Antora essential extensions]

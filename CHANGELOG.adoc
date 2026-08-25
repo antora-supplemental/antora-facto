@@ -1,5 +1,11 @@
 = Changelog
 
+== 2026-08-25 — Add page-context to Facto
+
+* Register `@antora-supplemental/page-context` under `asciidoc.extensions`
+* Set `page-context-active` so page-body fallbacks stay hidden under Facto
+* Document `github:antora-supplemental/page-context#main` until npm publish
+
 == 2026-08-25 — Initial antora-facto scaffold
 
 * Compose pack for Valentus + Lunr + STEM + Kroki (Mermaid + PlantUML → SVG)
