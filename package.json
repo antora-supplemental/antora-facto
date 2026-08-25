@@ -1,0 +1,16 @@
+{
+  "name": "antora-facto",
+  "version": "0.1.0",
+  "private": true,
+  "description": "De-facto Antora stack composer: Valentus + Lunr + STEM + Kroki diagrams (not Valentus core)",
+  "license": "MPL-2.0",
+  "scripts": {
+    "build:example": "antora examples/minimal-playbook.yml"
+  },
+  "dependencies": {
+    "@antora/lunr-extension": "^1.0.0-alpha.13",
+    "antora": "^3.1.14",
+    "asciidoctor-kroki": "^0.18.1"
+  },
+  "packageManager": "pnpm@10.28.1"
+}

@@ -1,0 +1,26 @@
+# Minimal example — content is stubs under examples/docs
+site:
+  title: antora-facto example
+  url: https://example.local
+  start_page: facto-example::index.adoc
+antora:
+  extensions:
+    - '@antora/lunr-extension'
+content:
+  sources:
+    - url: .
+      start_path: examples/docs
+      branches: HEAD
+ui:
+  bundle:
+    url: https://github.com/antora-supplemental/valentus-theme/releases/download/v2/ui-bundle.zip
+    snapshot: true
+asciidoc:
+  extensions:
+    - asciidoctor-kroki
+  attributes:
+    stem: latexmath
+    kroki-server-url: https://kroki.io
+    kroki-fetch-diagram: true
+output:
+  dir: ./build/site

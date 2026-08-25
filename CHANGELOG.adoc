@@ -1,0 +1,7 @@
+= Changelog
+
+== 2026-08-25 — Initial antora-facto scaffold
+
+* Compose pack for Valentus + Lunr + STEM + Kroki (Mermaid + PlantUML → SVG)
+* Explicitly **not** a Valentus core / `v2` default — theme stays lean; Facto is the discoverable pack
+* `playbook.fragment.yml` + minimal example playbook

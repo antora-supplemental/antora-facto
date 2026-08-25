@@ -1,0 +1,20 @@
+# Fragment — paste under your playbook root (merge with existing keys).
+# antora-facto: Valentus stays the UI bundle; this file is the extras composer.
+
+antora:
+  extensions:
+    - '@antora/lunr-extension'
+
+ui:
+  bundle:
+    url: https://github.com/antora-supplemental/valentus-theme/releases/download/v2/ui-bundle.zip
+    snapshot: true
+  # supplemental_files: ./supplemental-ui  # brand + site-math.js/css; optional site-mermaid.js fallback
+
+asciidoc:
+  extensions:
+    - asciidoctor-kroki
+  attributes:
+    stem: latexmath
+    kroki-server-url: https://kroki.io
+    kroki-fetch-diagram: true

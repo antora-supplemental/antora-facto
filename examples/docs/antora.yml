@@ -1,0 +1,6 @@
+name: facto-example
+title: Facto example
+version: ~
+start_page: ROOT:index.adoc
+nav:
+  - modules/ROOT/nav.adoc

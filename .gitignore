@@ -1,0 +1,10 @@
+*
+!.gitignore
+!README.adoc
+!AGENTS.md
+!CHANGELOG.adoc
+!package.json
+!pnpm-lock.yaml
+!playbook.fragment.yml
+!examples/
+!examples/**

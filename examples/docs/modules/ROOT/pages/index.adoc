@@ -1,0 +1,21 @@
+= antora-facto example
+:description: Smoke page for Mermaid and PlantUML via Kroki.
+
+This site uses the *antora-facto* composition: Valentus UI + Lunr + STEM + Kroki.
+
+[source,mermaid]
+----
+flowchart LR
+  V[Valentus UI] --> F[antora-facto]
+  L[Lunr] --> F
+  K[Kroki Mermaid + PlantUML] --> F
+  M[STEM / KaTeX] --> F
+----
+
+[plantuml]
+----
+@startuml
+Alice -> Bob: cite
+Bob --> Alice: resolve
+@enduml
+----
