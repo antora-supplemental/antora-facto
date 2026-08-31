@@ -1,15 +1,23 @@
-# Fragment — paste under your playbook root (merge with existing keys).
+# Fragment - paste under your playbook root (merge with existing keys).
 # antora-facto: Valentus stays the UI bundle; this file is the extras composer.
+
+# Folder URLs: index.adoc → …/email/ (canonical + sitemap follow Antora page URL).
+urls:
+  html_extension_style: indexify
 
 antora:
   extensions:
     - '@antora/lunr-extension'
+    # Multi-component hubs: fold every component into the sidebar tree (keeps default nav-tree JS).
+    # - require: '@antora-supplemental/site-nav-tree'
+    #   order: [home, general-knowledge]
 
 ui:
   bundle:
     url: https://github.com/antora-supplemental/valentus-theme/releases/download/v2/ui-bundle.zip
     snapshot: true
   # supplemental_files: ./supplemental-ui  # brand + site-math.js/css; optional site-mermaid.js fallback
+  # With site-nav-tree + Valentus: also copy site-nav-tree ui/partials/nav-menu.hbs into supplemental-ui/partials/
 
 asciidoc:
   extensions:

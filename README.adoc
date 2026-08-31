@@ -9,7 +9,8 @@ It documents and templates what DevCentr / antora-supplemental already reuse tog
 * **STEM / KaTeX** — `stem: latexmath` (+ supplemental math JS/CSS until in-bundle)
 * **Kroki diagrams** (`asciidoctor-kroki`) — Mermaid + PlantUML → SVG at build time
 * **Page context** (`@antora-supplemental/page-context`) — audience / author / rights metadata from `page-*` attributes
-* Optional neighbors: alias-to-latest / unversioned component URLs, search-chat omnibox
+* Optional neighbors: alias-to-latest / unversioned component URLs, search-chat omnibox, **site-nav-tree** (multi-component sidebar forest; keeps default nav-tree)
+* Playbook default: `urls.html_extension_style: indexify` (folder URLs; `index.adoc` → trailing-slash path)
 
 == Why a separate pack (not Valentus “full”)
 
