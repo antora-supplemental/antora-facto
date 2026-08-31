@@ -1,5 +1,9 @@
 = Changelog
 
+== 2026-08-30 — site-nav-tree allowlist guidance
+
+* Fragment comments and README: prefer `include` allowlist; content source ≠ forest root; thin tools stay under `home` portal or register+omit from include.
+
 == 2026-08-25 — Add page-context to Facto
 
 * Register `@antora-supplemental/page-context` under `asciidoc.extensions`

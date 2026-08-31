@@ -8,9 +8,11 @@ urls:
 antora:
   extensions:
     - '@antora/lunr-extension'
-    # Multi-component hubs: fold every component into the sidebar tree (keeps default nav-tree JS).
+    # Multi-component hubs: curated sidebar forest (keeps default nav-tree JS).
+    # Prefer `include` allowlist — content.sources ≠ forest roots.
     # - require: '@antora-supplemental/site-nav-tree'
-    #   order: [home, general-knowledge]
+    #   include: [home, general-knowledge, business-bootstrap]
+    #   order: [home, general-knowledge, business-bootstrap]
 
 ui:
   bundle:
