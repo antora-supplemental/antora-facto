@@ -13,6 +13,8 @@ antora:
     # - require: '@antora-supplemental/site-nav-tree'
     #   include: [home, general-knowledge, business-bootstrap]
     #   order: [home, general-knowledge, business-bootstrap]
+    - require: '@antora-supplemental/nav-typology'
+    - require: '@antora-supplemental/nav-typology-diataxis'
 
 ui:
   bundle:
@@ -20,6 +22,7 @@ ui:
     snapshot: true
   # supplemental_files: ./supplemental-ui  # brand + site-math.js/css; optional site-mermaid.js fallback
   # With site-nav-tree + Valentus: also copy site-nav-tree ui/partials/nav-menu.hbs into supplemental-ui/partials/
+  # With nav-typology: copy nav-tree partial, helpers, css, svg into supplemental-ui/
 
 asciidoc:
   extensions:
