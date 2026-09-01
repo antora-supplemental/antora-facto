@@ -1,5 +1,10 @@
 = Changelog
 
+== 2026-09-01 — build-stack footer attribution
+
+* Register `@antora-supplemental/build-stack` in `playbook.fragment.yml`.
+* README: document install and footer partial companion wiring.
+
 == 2026-08-30 — site-nav-tree allowlist guidance
 
 * Fragment comments and README: prefer `include` allowlist; content source ≠ forest root; thin tools stay under `home` portal or register+omit from include.

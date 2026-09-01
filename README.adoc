@@ -9,6 +9,7 @@ It documents and templates what DevCentr / antora-supplemental already reuse tog
 * **STEM / KaTeX** — `stem: latexmath` (+ supplemental math JS/CSS until in-bundle)
 * **Kroki diagrams** (`asciidoctor-kroki`) — Mermaid + PlantUML → SVG at build time
 * **Page context** (`@antora-supplemental/page-context`) — audience / author / rights metadata from `page-*` attributes
+* **Build stack footer** (`@antora-supplemental/build-stack`) — publish playbook extensions + UI bundle to `site.keys` for footer attribution
 * Optional neighbors: alias-to-latest / unversioned component URLs, search-chat omnibox, **site-nav-tree** (multi-component sidebar forest with an **`include` allowlist**; keeps default nav-tree)
 * Playbook default: `urls.html_extension_style: indexify` (folder URLs; `index.adoc` → trailing-slash path)
 
@@ -22,9 +23,11 @@ Facto is discovered **by pack name** (like a VS Code extension pack): theme + th
 == Quick start
 
 . Copy `playbook.fragment.yml` into your playbook (or start from `examples/minimal-playbook.yml`).
-. `pnpm add antora @antora/lunr-extension asciidoctor-kroki @antora-supplemental/page-context`
+. `pnpm add antora @antora/lunr-extension asciidoctor-kroki @antora-supplemental/page-context @antora-supplemental/build-stack`
 +
 Until page-context is on npm: `pnpm add github:antora-supplemental/page-context#main`
++
+Until build-stack is on npm: `pnpm add github:antora-supplemental/build-stack#main`
 . Point `ui.bundle.url` at the Valentus `v2` release zip.
 . Add brand/math/mermaid supplemental files as needed (see Valentus docs / org `supplemental-ui` patterns).
 
