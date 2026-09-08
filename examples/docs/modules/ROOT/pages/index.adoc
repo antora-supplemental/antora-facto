@@ -1,11 +1,11 @@
 = antora-facto example
-:description: Smoke page for Mermaid and PlantUML via Kroki.
+:description: Smoke page for canonical Mermaid and themed SVG delivery.
 :page-audience: Maintainers verifying the Facto compose pack
 :page-usage-context: Example site under antora-facto
 :page-doc-type: explanation
 :page-orig-author: Ryan Johnson
 :page-last-author: Cursor agent on behalf of Ryan Johnson
-:page-last-edited: 2026-08-25
+:page-last-edited: 2026-09-08
 
 ifndef::page-context-active[]
 [.page-context.page-context-lead]
@@ -23,20 +23,18 @@ endif::[]
 
 This site uses the *antora-facto* composition: Valentus UI + Lunr + STEM + Kroki + page-context.
 
+[.themed-svg]
+image::diagrams/facto-composition.svg[antora-facto composition]
+
 [source,mermaid]
 ----
-flowchart LR
-  V[Valentus UI] --> F[antora-facto]
-  L[Lunr] --> F
-  K[Kroki Mermaid + PlantUML] --> F
-  M[STEM / KaTeX] --> F
-  P[page-context] --> F
+include::../images/diagrams/facto-composition.mmd[]
 ----
 
-[plantuml]
+[.themed-svg]
+image::diagrams/citation-round-trip.svg[Citation round trip]
+
+[source,mermaid]
 ----
-@startuml
-Alice -> Bob: cite
-Bob --> Alice: resolve
-@enduml
+include::../images/diagrams/citation-round-trip.mmd[]
 ----

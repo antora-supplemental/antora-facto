@@ -8,7 +8,7 @@ antora:
     - '@antora/lunr-extension'
 content:
   sources:
-    - url: .
+    - url: ./..
       start_path: examples/docs
       branches: HEAD
 ui:

@@ -5,7 +5,9 @@
   "description": "De-facto Antora stack composer: Valentus + Lunr + STEM + Kroki diagrams (not Valentus core)",
   "license": "MPL-2.0",
   "scripts": {
-    "build:example": "antora examples/minimal-playbook.yml"
+    "build:example": "antora examples/minimal-playbook.yml",
+    "diagrams:generate": "node scripts/generate-themed-diagrams.mjs",
+    "diagrams:check": "node scripts/generate-themed-diagrams.mjs --check"
   },
   "dependencies": {
     "@antora/lunr-extension": "^1.0.0-alpha.13",
@@ -13,6 +15,16 @@
     "@antora-supplemental/page-context": "github:antora-supplemental/page-context#main",
     "antora": "^3.1.14",
     "asciidoctor-kroki": "^0.18.1"
+  },
+  "devDependencies": {
+    "@dev-centr/mermaid-svg-css-vars": "0.1.2",
+    "@dev-centr/themed-svg": "0.1.1",
+    "@mermaid-js/mermaid-cli": "11.17.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "puppeteer"
+    ]
   },
   "packageManager": "pnpm@10.28.1"
 }

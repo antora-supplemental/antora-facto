@@ -1,5 +1,11 @@
 = Changelog
 
+== 2026-09-08 — Themed diagram artifacts
+
+* Make Mermaid the canonical source for both example diagrams, including the former Alice/Bob PlantUML sequence.
+* Ship explicit Themed SVG manifests plus deterministic standalone-adaptive and host SVG artifacts.
+* Preserve readable source examples through AsciiDoc includes and add pinned generate/check tooling.
+
 == 2026-09-01 — build-stack footer attribution
 
 * Register `@antora-supplemental/build-stack` in `playbook.fragment.yml`.
