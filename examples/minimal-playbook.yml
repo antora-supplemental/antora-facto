@@ -15,6 +15,7 @@ ui:
   bundle:
     url: https://github.com/antora-supplemental/valentus-theme/releases/download/v2/ui-bundle.zip
     snapshot: true
+  supplemental_files: ./examples/supplemental-ui
 asciidoc:
   extensions:
     - asciidoctor-kroki
