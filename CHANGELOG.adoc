@@ -1,5 +1,11 @@
 = Changelog
 
+== 2026-09-10 — page-context 0.6 + keyword listings
+
+* Register `@antora-supplemental/page-context/antora` for keyword index pages under `home/keywords/`.
+* Set `page-context-keyword-base: '/home/keywords'`.
+* Pin page-context `#v0.6.0` and page-edit `#v0.2.0` (View | Edit source row).
+
 == 2026-09-09 — page-edit in Facto
 
 * Register `@antora-supplemental/page-edit` under `antora.extensions` (bake Edit + VCS mark into page-context lead).
@@ -26,12 +32,12 @@
 
 == 2026-08-25 — Add page-context to Facto
 
-* Register @antora-supplemental/page-context under sciidoc.extensions
+* Register @antora-supplemental/page-context under asciidoc.extensions
 * Set page-context-active so page-body fallbacks stay hidden under Facto
 * Document github:antora-supplemental/page-context#main until npm publish
 
 == 2026-08-25 — Initial antora-facto scaffold
 
 * Compose pack for Valentus + Lunr + STEM + Kroki (Mermaid + PlantUML → SVG)
-* Explicitly **not** a Valentus core / 2 default — theme stays lean; Facto is the discoverable pack
+* Explicitly **not** a Valentus core / v2 default — theme stays lean; Facto is the discoverable pack
 * playbook.fragment.yml + minimal example playbook

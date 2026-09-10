@@ -16,8 +16,12 @@ antora:
     - require: '@antora-supplemental/nav-typology'
     - require: '@antora-supplemental/nav-typology-diataxis'
     - '@antora-supplemental/build-stack'
-    # Bake Edit + VCS mark into page-context lead (no runtime icon JS).
+    # Bake View | Edit into page-context lead table (no runtime icon JS).
     - '@antora-supplemental/page-edit'
+    # Keyword / tag listing pages: /{component}/keywords/{slug}/
+    - require: '@antora-supplemental/page-context/antora'
+      component: home
+      path: keywords
 
 ui:
   bundle:
@@ -38,3 +42,5 @@ asciidoc:
     kroki-fetch-diagram: true
     # Suppress page-context hard-coded fallbacks in page bodies (attrs still required)
     page-context-active: ''
+    # Must match page-context/antora host component + path (no trailing slash)
+    page-context-keyword-base: '/home/keywords'
