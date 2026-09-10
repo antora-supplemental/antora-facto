@@ -1,5 +1,9 @@
 = Changelog
 
+== 2026-09-10 — page-context Audience role label (0.6.2)
+
+* Pin `@antora-supplemental/page-context` to `#v0.6.2` so lead chrome shows **Audience role** (necessary role / permissions / access / expectations).
+
 == 2026-09-10 — page-context 0.6 + keyword listings
 
 * Register `@antora-supplemental/page-context/antora` for keyword index pages under `home/keywords/`.
