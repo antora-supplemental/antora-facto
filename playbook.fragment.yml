@@ -16,6 +16,8 @@ antora:
     - require: '@antora-supplemental/nav-typology'
     - require: '@antora-supplemental/nav-typology-diataxis'
     - '@antora-supplemental/build-stack'
+    # Bake Edit + VCS mark into page-context lead (no runtime icon JS).
+    - '@antora-supplemental/page-edit'
 
 ui:
   bundle:

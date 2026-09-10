@@ -1,5 +1,10 @@
 = Changelog
 
+== 2026-09-09 — page-edit in Facto
+
+* Register `@antora-supplemental/page-edit` under `antora.extensions` (bake Edit + VCS mark into page-context lead).
+* Document install alongside page-context.
+
 == 2026-09-09 — Recommended site-nav-tree + nav-typology pairing
 
 * README: when enabling site-nav-tree, also ship nav-typology (+ companion UI) and nav-typology-diataxis for Diátaxis hubs; typology alone remains optional.

@@ -13,6 +13,7 @@
     "@antora/lunr-extension": "^1.0.0-alpha.13",
     "@antora-supplemental/build-stack": "github:antora-supplemental/build-stack#main",
     "@antora-supplemental/page-context": "github:antora-supplemental/page-context#main",
+    "@antora-supplemental/page-edit": "github:antora-supplemental/page-edit#main",
     "antora": "^3.1.14",
     "asciidoctor-kroki": "^0.18.1"
   },
