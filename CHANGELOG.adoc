@@ -1,5 +1,9 @@
 = Changelog
 
+== 2026-09-09 — Recommended site-nav-tree + nav-typology pairing
+
+* README: when enabling site-nav-tree, also ship nav-typology (+ companion UI) and nav-typology-diataxis for Diátaxis hubs; typology alone remains optional.
+
 == 2026-09-08 — Themed diagram artifacts
 
 * Make Mermaid the canonical source for both example diagrams, including the former Alice/Bob PlantUML sequence.
@@ -8,21 +12,21 @@
 
 == 2026-09-01 — build-stack footer attribution
 
-* Register `@antora-supplemental/build-stack` in `playbook.fragment.yml`.
+* Register @antora-supplemental/build-stack in playbook.fragment.yml.
 * README: document install and footer partial companion wiring.
 
 == 2026-08-30 — site-nav-tree allowlist guidance
 
-* Fragment comments and README: prefer `include` allowlist; content source ≠ forest root; thin tools stay under `home` portal or register+omit from include.
+* Fragment comments and README: prefer include allowlist; content source ≠ forest root; thin tools stay under home portal or register+omit from include.
 
 == 2026-08-25 — Add page-context to Facto
 
-* Register `@antora-supplemental/page-context` under `asciidoc.extensions`
-* Set `page-context-active` so page-body fallbacks stay hidden under Facto
-* Document `github:antora-supplemental/page-context#main` until npm publish
+* Register @antora-supplemental/page-context under sciidoc.extensions
+* Set page-context-active so page-body fallbacks stay hidden under Facto
+* Document github:antora-supplemental/page-context#main until npm publish
 
 == 2026-08-25 — Initial antora-facto scaffold
 
 * Compose pack for Valentus + Lunr + STEM + Kroki (Mermaid + PlantUML → SVG)
-* Explicitly **not** a Valentus core / `v2` default — theme stays lean; Facto is the discoverable pack
-* `playbook.fragment.yml` + minimal example playbook
+* Explicitly **not** a Valentus core / 2 default — theme stays lean; Facto is the discoverable pack
+* playbook.fragment.yml + minimal example playbook
