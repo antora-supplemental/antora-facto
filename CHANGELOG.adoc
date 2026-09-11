@@ -1,5 +1,10 @@
 = Changelog
 
+== 2026-09-11 — page-context 0.6.6 lead spacing
+
+* Pin `@antora-supplemental/page-context` to `#v0.6.6` so the lead name, avatar, and `via` sit 0.4rem apart.
+* Pin `@antora-supplemental/page-edit` to `#v0.2.3` (was `#v0.2.0`) so View | Edit stays inside the page and is not prepended before the DOCTYPE.
+
 == 2026-09-10 — Themed SVG host CSS for examples
 
 * Add `examples/supplemental-ui/css/site-themed-svg.css` with light+dark `--themed-svg-antora-facto-*` host vars matching example manifests so dark mode works after host upgrade.
